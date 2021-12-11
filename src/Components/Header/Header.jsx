@@ -95,9 +95,6 @@ const Header = () => {
                   </MenuItem>
                 ))}
                 <MenuItem onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">Sign In</Typography>
-                </MenuItem>
-                <MenuItem onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">Sign Up</Typography>
                 </MenuItem>
               </Menu>
