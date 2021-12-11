@@ -12,7 +12,7 @@ import Productive from "./Components/Productive/Productive";
 function App() {
   useEffect(() => {
     AOS.init({
-      offset: 120,
+      offset: 100,
       delay: 100,
       duration: 900,
       easing: "ease",
