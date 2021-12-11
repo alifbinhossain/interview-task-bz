@@ -14,7 +14,12 @@ import InsertCommentIcon from "@mui/icons-material/InsertComment";
 const Post = ({ post }) => {
   const { name, content, avatar, like, comment, share } = post;
   return (
-    <Card sx={{ minWidth: 275, boxShadow: 2 }} className="post">
+    <Card
+      sx={{ minWidth: 275, boxShadow: 2 }}
+      className="post"
+      data-aos="fade-in"
+      data-aos-duration="1200"
+    >
       <CardHeader
         avatar={
           <Avatar aria-label="recipe">

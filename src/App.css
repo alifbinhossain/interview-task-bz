@@ -19,3 +19,11 @@
   transform: scale(0.95) translateY(-3px);
   box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.1);
 }
+
+.preloader-box {
+  background-color: #1e0e62;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

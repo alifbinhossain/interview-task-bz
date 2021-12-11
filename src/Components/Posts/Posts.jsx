@@ -1,21 +1,22 @@
 import { Grid } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Post from "./Post/Post";
 import "./Posts.css";
-import avatar from "../../images/avatar.png";
+import PostSkeleton from "./PostSkeleton/PostSkeleton";
 
 const Posts = () => {
-  const post = {
-    name: "A Guide To Rocky Mountain Vacations",
-    content:
-      "These tips come from the safety experts at Voith Turbo, York, Pa., which manufactures a device that helps trains with braking, to make train travel even better. The new type of railcar is on",
-    avatar: avatar,
-    like: 325,
-    comment: 115,
-    share: 47,
-  };
+  const [post, setPost] = useState(null);
+
+  useEffect(() => {
+    setTimeout(async () => {
+      const res = await fetch("./Post.json");
+      const data = await res.json();
+      setPost(data);
+    }, 3500);
+  });
+
   return (
-    <section className="posts">
+    <section className="posts" data-aos="fade-up">
       <h2>Posts</h2>
       <hr className="hr" />
       <Grid
@@ -25,7 +26,11 @@ const Posts = () => {
       >
         {Array.from(Array(6)).map((_, index) => (
           <Grid item xs={6} md={3} key={index}>
-            <Post post={post}></Post>
+            {post && window.scrollY > 1400 ? (
+              <Post post={post}></Post>
+            ) : (
+              <PostSkeleton></PostSkeleton>
+            )}
           </Grid>
         ))}
       </Grid>
