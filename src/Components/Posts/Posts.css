@@ -1,0 +1,32 @@
+.posts {
+  padding: 0 6rem 4rem;
+}
+
+.posts h2 {
+  text-align: center;
+  color: #1e0e62;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.posts .hr {
+  border: none;
+  border-bottom: 5px solid #1e0e62;
+  width: 5%;
+  margin: 0 auto 2rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              SHORT MEDIA QUERY                             */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 668px) {
+  .posts {
+    padding: 0 1rem 3rem;
+  }
+  .posts h2 {
+    font-size: 2.2rem;
+  }
+  .posts .hr {
+    border-bottom: 3px solid #1e0e62;
+    width: 8%;
+  }
+}

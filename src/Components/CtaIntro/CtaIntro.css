@@ -1,0 +1,44 @@
+.cta-intro {
+  padding: 4rem 6rem 1rem;
+  text-align: center;
+}
+.cta-intro i {
+  font-size: 2rem;
+  color: #1e0e62;
+  margin-right: 2rem;
+}
+.cta-intro .color-pink {
+  color: #e93a7d;
+}
+
+.cta-intro h2 {
+  color: #1e0e62;
+  font-size: 3.5rem;
+  margin: 1rem 0;
+}
+.cta-intro p {
+  color: #8c8c8c;
+  width: 70%;
+  margin: 0 auto;
+  letter-spacing: 0.8px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              SHORT MEDIA QUERY                             */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 668px) {
+  .cta-intro {
+    padding: 3rem 1rem 1rem;
+    text-align: center;
+  }
+  .cta-intro i {
+    font-size: 1rem;
+  }
+
+  .cta-intro h2 {
+    font-size: 2.2rem;
+  }
+  .cta-intro p {
+    width: 98%;
+  }
+}

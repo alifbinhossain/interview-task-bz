@@ -1,0 +1,95 @@
+.hero {
+  min-height: 100vh;
+  max-height: 1400px;
+  padding: 2rem 6rem 3rem;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5) 23%,
+      rgba(72, 43, 231, 0.7) 73%
+    ),
+    url(../../images/hero-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.hero-content .heading-primary {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  width: 50%;
+  letter-spacing: 0.8px;
+  margin-bottom: 2rem;
+}
+
+.hero-content button {
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 32px;
+}
+
+.btn-started {
+  border: 2px solid transparent;
+  background-color: #fff;
+  color: #482be7;
+  transition: all 0.2s ease-in;
+}
+.btn-learn {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #fff;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              SHORT MEDIA QUERY                             */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 668px) {
+  .hero {
+    max-height: 100vh;
+    padding: 2rem 1rem 0;
+    position: relative;
+  }
+
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .hero-content .heading-primary {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    width: 98%;
+    font-size: 16px;
+  }
+
+  .hero-content button {
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 32px;
+  }
+
+  .btn-started {
+    border: 2px solid transparent;
+    background-color: #fff;
+    color: #482be7;
+    transition: all 0.2s ease-in;
+  }
+  .btn-learn {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #fff;
+  }
+}

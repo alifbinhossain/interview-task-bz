@@ -1,0 +1,25 @@
+.nav-link {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: 300;
+}
+.btn-signup {
+  color: #482be7;
+  padding: 0.6rem 1rem;
+  font-size: 18px;
+  border: none;
+  border-radius: 100px;
+}
+
+/* ----------------------------- FOR CUSTOM NAV ----------------------------- */
+/* header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+ */

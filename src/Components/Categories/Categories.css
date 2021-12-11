@@ -1,0 +1,31 @@
+.category {
+  padding: 1rem 6rem;
+}
+.category h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1e0e62;
+  margin-bottom: 1rem;
+}
+.category hr {
+  border: none;
+  border-bottom: 5px solid #1e0e62;
+  width: 5%;
+  margin: 0 auto 2rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              SHORT MEDIA QUERY                             */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 668px) {
+  .category {
+    padding: 0 1rem 3rem;
+  }
+  .category h3 {
+    font-size: 2.2rem;
+  }
+  .category hr {
+    border-bottom: 3px solid #1e0e62;
+    width: 8%;
+  }
+}

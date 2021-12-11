@@ -1,0 +1,58 @@
+.productive {
+  padding: 3rem 6rem;
+}
+
+.productive-details {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.productive-details .icon {
+  display: block;
+  height: 6rem;
+  width: 6rem;
+  background-color: #1e0e62;
+  color: #fff;
+  border-radius: 20px;
+  font-family: "Font Awesome";
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.productive-details .headings {
+  margin: -2rem 0 0 2rem;
+}
+.productive-details h4 {
+  color: #1e0e62;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+.productive-details p {
+  color: rgba(21, 20, 57, 0.4);
+  margin-top: 0.5rem;
+}
+
+.productive button {
+  border: 2px solid #ebeaed;
+  background-color: transparent;
+  color: #1e0e62;
+  font-size: 22px;
+  padding: 0.6rem 1.2rem;
+  border-radius: 100px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              SHORT MEDIA QUERY                             */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 668px) {
+  .productive {
+    padding: 0 1rem 2rem;
+  }
+  .productive-details .headings {
+    margin: 0 0 0 1rem;
+  }
+  .productive-details h4 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+}

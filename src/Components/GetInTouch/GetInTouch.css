@@ -1,0 +1,61 @@
+.getInTouch {
+  margin: 2rem 6rem 4rem;
+  padding: 6rem;
+  background-image: url(../../images/cta-banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 7px;
+}
+.getInTouch h2 {
+  color: #fff;
+  font-size: 3.5rem;
+  width: 90%;
+  margin: 1rem auto;
+}
+.input-box {
+  margin: 2rem auto;
+  display: flex;
+  border-radius: 7px;
+  overflow: hidden;
+  width: 50%;
+  padding: 0;
+}
+
+.input-box input {
+  padding: 0.6rem 1rem;
+  flex: 1;
+}
+.input-box input:focus {
+  outline: none;
+}
+
+.input-box button {
+  padding: 0.8rem 1.2rem;
+  background-color: #4a20ff;
+  border: none;
+  color: #fff;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              SHORT MEDIA QUERY                             */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 668px) {
+  .getInTouch {
+    margin: 1rem 1rem 3rem;
+    padding: 1rem;
+  }
+  .getInTouch h2 {
+    font-size: 1.8rem;
+    width: 98%;
+    margin: 1rem auto;
+  }
+  .input-box {
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  .input-box button {
+    flex: 0 0 30%;
+  }
+}
