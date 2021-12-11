@@ -25,6 +25,7 @@
 .input-box input {
   padding: 0.6rem 1rem;
   flex: 1;
+  border: none;
 }
 .input-box input:focus {
   outline: none;
@@ -56,6 +57,6 @@
   }
 
   .input-box button {
-    flex: 0 0 30%;
+    padding: 0.4rem 0.8rem;
   }
 }
